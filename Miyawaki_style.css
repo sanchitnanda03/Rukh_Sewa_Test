@@ -1,0 +1,376 @@
+/* Reset some default styles */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #e8f5e9; /* Light green background */
+}
+
+/* Header title styling */
+header h1 {
+    font-family: 'Georgia', serif; /* Elegant font */
+    color: #004d00; /* Elegant dark green */
+    font-size: 3em; /* Adjust size as needed */
+    margin-bottom: 10px;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Button styling */
+nav button {
+    background-color: #66bb6a; /* Elegant green */
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav button:hover {
+    background-color: #388e3c; /* Darker green for hover effect */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Introduction section styling */
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Introduction section styling */
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Include Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Patrick+Hand:wght@400;700&display=swap');
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Introduction section styling */
+.intro {
+    position: relative;
+    background-image: url('https://media.istockphoto.com/id/1979955108/photo/beautiful-tree-lined-road-in-the-tunnel-of-trees-maharashtra-india-asia.webp?b=1&s=612x612&w=0&k=20&c=n8IlBEDAmg_3SZRBFvuwsQOsfZ0kEnYOFSKzJrjRe1Y='); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1; /* Make sure the blur effect is behind the content */
+}
+
+/* Content inside the intro section */
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a max-width for content alignment */
+    position: relative;
+    z-index: 1; /* Ensure content is above the background */
+}
+
+.intro h2 {
+    font-family: 'Patrick Hand', cursive; /* Use a similar script font */
+    font-size: 3em; /* Adjusted size for multi-line effect */
+    margin: 0;
+    text-align: left;
+    margin-left: 100px; /* Left margin for heading */
+}
+
+.intro p {
+    font-family: 'Satisfy', cursive; /* Satisfy font for tagline */
+    font-size: 1.5em; /* Slightly larger for visibility */
+    margin: 0;
+    text-align: right;
+    margin-right: 100px; /* Right margin for tagline */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 2em; /* Adjust for smaller screens */
+        margin-left: 20px; /* Smaller left margin on mobile */
+    }
+
+    .intro p {
+        font-size: 1.2em; /* Adjust for smaller screens */
+        margin-right: 20px; /* Smaller right margin on mobile */
+    }
+}
+
+
+
+/* Content section styling */
+/* Include Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap');
+
+/* Styling for the content section */
+.content {
+    display: flex;
+    flex-direction: column; /* Stack heading and content vertically */
+    align-items: center;
+    padding: 20px;
+    /* padding-bottom: 50px; */
+    padding-top: 60px;
+    background-color: #fff;
+    padding-bottom: 60px;
+}
+
+.content h2 {
+    font-family: 'Old Standard TT', serif; /* Font for heading */
+    font-size: 2.5em; /* Adjust size as needed */
+    margin-bottom: 20px; /* Space below heading */
+    text-align: center; /* Center align the heading */
+}
+
+.text-content {
+    /* display: flex;
+    align-items: flex-start;  Align text to the top 
+    justify-content: flex-start;  Align text to the left 
+    width: 50%;  Width of the text-content 
+    margin-right: 50px;  Margin between text and image 
+    text-align: left; Align text to the left within the div */
+
+    display: flex;
+    align-self: flex-start;
+    float: left;
+    background-color: #fff;
+    margin-left: 100px;
+    width: 50%;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.text-content p {
+    margin: 0;
+}
+
+.image_content{
+    align-self: flex-end;
+    margin-right: 200px;
+    /* margin: 0; */
+    float: right;
+    padding: 0;
+    width: 10%;
+}
+.miyawaki-image {
+    width: 100%; /* Adjust width to fit the right side of the paragraph */
+    height: auto;
+    border-radius: 10px;
+    display: block; /* Ensure image is a block element */
+    align-items: right;
+    margin-left: 0; /* No extra margin on left of image */
+}
+
+@media (max-width: 768px) {
+    .content {
+        text-align: left; /* Left align text on smaller screens */
+    }
+
+    .text-content {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Remove right margin */
+        flex-direction: column; /* Stack text and image vertically on small screens */
+        align-items: center; /* Center align items in column layout */
+    }
+
+    .miyawaki-image {
+        width: 100%; /* Full width image on smaller screens */
+        margin-left: 0; /* Remove left margin on smaller screens */
+        margin-top: 20px; /* Margin for separation on smaller screens */
+    }
+}
+
+
+
+/* Benefits section styling */
+.benefits {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-family: 'Old Standard TT', serif; /* Font for heading */
+    font-size: 2.5em; /* Adjust size as needed */
+    margin-bottom: 40px; /* Space below heading */
+    text-align: center; /* Center align the heading */
+}
+
+/* Card container styling */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-self: center;
+}
+
+/* Card styling */
+.card {
+    background-color: #c8e6c9; /* Light green for card background */
+    border: 1px solid #a5d6a7; /* Slightly darker green border */
+    border-radius: 10px;
+    padding: 15px;
+    width: 20%;
+    height: 250px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .miyawaki-image {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+.implementing-method {
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.implementing-method h2 {
+    font-family: 'Old Standard TT', serif; /* Font for heading */
+    font-size: 2.5em; /* Adjust size as needed */
+    margin-bottom: 40px; /* Space below heading */
+    text-align: center; /* Center align the heading */
+}
+
+.contact-us {
+    background-color: #d8e8d5; /* Soft green background */
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-us h2 {
+    font-family: 'Old Standard TT', serif; /* Font for heading */
+    font-size: 2.5em; /* Adjust size as needed */
+    color: #4b8f4e; /* Darker green for heading */
+    margin: 0;
+    flex: 1;
+    text-align: left; /* Left align the heading */
+}
+
+.contact-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-form {
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4b8f4e; /* Matching the heading color */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #4b8f4e; /* Matching the heading color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form button:hover {
+    background-color: #3a6e3d; /* Darker green on hover */
+}
